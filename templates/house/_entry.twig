@@ -111,18 +111,10 @@
 				<!-- todo: Loop over de waardes van de strengths van het pand bij .c-detail__list.-->
 
 				<ul>
-					<li class="c-detail__list-item">
-						EPC label A</li>
-					<li class="c-detail__list-item">
-						2 terraces</li>
-					<li class="c-detail__list-item">
-						Wide bedroom</li>
-					<li class="c-detail__list-item">
-						Green neighbourhood</li>
-					<li class="c-detail__list-item">
-						Water view</li>
-					<li class="c-detail__list-item">
-						Ready to move in</li>
+					{% for thing in entry.strenths %}
+						<li class="c-detail__list-item">
+							{{thing.listItem}}</li>
+					{% endfor %}
 				</ul>
 			</div>
 			<div class="col-12 col-sm-8 col-md-8 p-4 c-detail__about">
